@@ -1,0 +1,149 @@
+.footer {
+    width: 100%;
+    padding-top: 1%;
+    margin: 12% auto 1% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.branding {
+    padding-bottom: 2%;
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footerLogo {
+    width: 50%;
+}
+
+.footerLinks {
+    width: 20%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brandLogo {
+    color: #000000;
+    cursor: pointer;
+}
+
+.footer-services {
+    margin-left: 5%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    margin-left: 5%;
+}
+
+
+
+li:hover {
+    color: #EB4D1A;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .branding, .footer-services, .contact {
+        width: 100%;
+        margin: 2% 0;
+        text-align: center;
+    }
+
+    .footerLogo {
+        width: 30%;
+    }
+
+    .footerLinks {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .footerLinks a {
+        margin: 0 10px;
+    }
+    .footer-services , .contact  {
+        margin-left: 20%;
+        padding-left: 20%;
+    }
+
+    .footer-services , .contact  {
+        margin: 5px 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin: 5% auto;
+    }
+
+    .footerLogo {
+        width: 40%;
+    }
+    .footer-services , .contact  {
+        margin-left: 20%;
+        padding-left: 20%;
+    }
+
+    .footer-services , .contact  {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        margin: 2% auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerLogo {
+        width: 50%;
+    }
+
+    .footer-services , .contact  {
+        margin-left: 20%;
+        padding-left: 20%;
+    }
+
+    .footer-services , .contact  {
+        margin: 5px 0;
+    }
+
+    .branding {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-services, .contact {
+        order: 3;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerLinks {
+        order: 4;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .footerLinks a {
+        margin: 0 5px;
+    }   
+}

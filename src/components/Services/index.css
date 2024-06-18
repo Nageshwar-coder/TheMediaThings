@@ -1,0 +1,80 @@
+.empty-div {
+    margin-top: 5%;
+    height: 20vh;
+    padding-bottom: 3%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.serviceHeading1 {
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+
+.cardsContainer {
+    padding: 11%;
+    padding-top: 0;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: 5%; */
+}
+
+.card {
+    padding: 2%;
+    margin-top: 2%;
+    border: 1px solid #EB4D1A;
+    border-radius: 9px;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 9px;
+}
+
+.redirection {
+    height: 21vh;
+    width: 100%;
+    margin: 3% auto 3% auto;
+    background-image: url("https://t3.ftcdn.net/jpg/03/26/61/00/240_F_326610062_NBlAHDP8JTPnp8vJ2pofSRUvYMTSj1Cx.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redirection-descript {
+    text-align: center;
+    width: 40%;
+}
+
+.redirectionButton {
+    width: 170px;
+}
+
+.button {
+    width: 100%;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #FF8C00;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.button:hover {
+    border: 2px solid darkorange;
+    background-color: darkorange;
+    color: white;
+}

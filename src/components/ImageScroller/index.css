@@ -1,0 +1,30 @@
+.image-scroller-container {
+    width: 100%;
+    overflow: hidden;
+}
+  
+.image-scroller-wrapper {
+    display: flex;
+    transition: transform 0.5 ease; /* Smooth transition for image movement */
+}
+  
+.image-slide {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Adjust as needed */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    animation: forwards 10s infinite;
+}
+  
+.image-slide.active {
+    opacity: 1;
+}
+  
+  /* Animation to move images from left to right */
+@keyframes moveLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+}

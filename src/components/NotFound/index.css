@@ -1,0 +1,12 @@
+.notFound {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFoundHeading {
+    font-size: 33px;
+    font-weight: 500;
+    color: #000000;
+}

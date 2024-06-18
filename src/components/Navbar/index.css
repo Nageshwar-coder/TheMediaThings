@@ -1,0 +1,96 @@
+.navbar {
+    height: 10vh;
+    width: 90%;
+    padding-bottom: 0;
+    margin: 0 auto;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+}
+
+.logoLink {
+    width: 14%;
+    padding-top: 40px;
+    width: 200px;
+    height: 130px;
+}
+
+.logo {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.linksList {
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 100px;
+    transition: all 1s ease; 
+}
+
+.links:hover {
+    color: #EB4D1A;
+}
+
+.links {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+}
+
+.button1 {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none; 
+}
+
+
+@media (max-width: 1024px) {
+    .linksList {
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        background-color: white; 
+        position: absolute; 
+        top: 12vh; 
+        left: 0;
+        right: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1; 
+    }
+
+    .linksList.show {
+        display: flex; 
+    }
+
+    .links {
+        font-size: 20px; 
+        padding: 10px 0; 
+    }
+
+    .button1 {
+        display: block; 
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .linksList {
+        display: flex; 
+    }
+
+    .button1 {
+        display: none; 
+    }
+}
+a.links {
+    padding: 10px;
+}
